@@ -1,0 +1,654 @@
+
+/*Administramos el logo dandole un radio, un tamaño,
+ y que este mismo se ajuste a medida que cambia el tamaña del navegador*/
+ .logo {
+    margin-top:50px;
+    border-radius: 45px;
+    max-width: 50%;
+    height: auto;
+    min-width: 25%;
+}
+
+.img_amp{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 160px; 
+    height:160px; 
+    margin-left: -80px; 
+    margin-top: -80px; 
+    filter: drop-shadow(5px 5px 10px #444);
+}
+
+.img_list {
+    width: 100px;
+}
+
+/* Contenido de la tabla a la que agrergamos el contenico principal 
+y le damos formato como su tamaño minimo y un color de fondo*/
+#tabla_contenido {
+    width: 75%;
+    background-color: #3ead47;
+}
+/*Formato a las filas de encabezado y la columnas*/
+th, td { 
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+/*Formato especifico a la columna de encabezado*/
+th {
+    background-color: #3ead47;
+    color: white;
+}
+/*alinea el contenido de los div hacia el centro*/
+div {
+    align-content: center;
+}
+/*en caso de usar un h1 aquí irá su modulación*/
+h1 {
+    font-family: 'GOODTIME';
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3vw;
+	width: auto;
+	color:#FFFFFF;
+	font-weight: bold;
+	margin: 0px;
+	padding: 20px;
+    border: 0px;
+    background-color: #3ead47;
+    
+}
+
+.amp{
+    font-family: 'GOODTIME';
+    text-transform: uppercase;
+    text-align: center;
+	width: auto;
+	color:#FFFFFF;
+	font-weight: bold;
+	margin: 0px;
+	padding: 20px;
+    border: 0px;
+    background-color: #F97E1C;
+    
+
+}
+/*Mosificamos la alineación de los encabezados h2 y le damos color a la fuente*/
+h2 {
+    font-family: 'GOODTIME';
+    align-self: center;
+    color: white;
+    background-color: rgb(100, 100, 100);
+    text-transform: uppercase;
+    margin: 0px;
+	padding: 20px;
+    text-align: center;
+	width: auto;
+}
+/*en caso de usar un h1 aquí irá su modulación*/
+h3 {
+    font-family: 'GOODTIME';
+    color: white;
+    background-color: rgb(100, 100, 100);
+    text-transform: uppercase;
+    margin: 0px;
+	padding: 20px;
+    text-align: center;
+	width: auto; 
+}
+h4 {
+    font-family: 'GOODTIME';
+    color: white;
+    background-color: rgba(161, 161, 161, 0.64);
+    text-transform: uppercase;
+    margin: 0px;
+	padding: 20px;
+    text-align: center;
+	width: auto; 
+}
+
+/*Eliminamos los margenes y paddings que agrega el navegador por defecto*/
+* {
+    font-family: 'GeosansLight';
+    padding: 0;
+    margin: 0;
+}
+/*al header le brindamos un color en especifico de fondo sin opacidad
+hacemos que se extienda por toda la pantalla en su anchura, 
+fijamos su posición a manera que este se acomode al tamaño del explorador,
+y lo fijamos un valor alto z-indez para acomodarlo a la parte de arriba de la pagina*/
+header {
+    background: rgba(0,0,0,0.9);
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+/* Desplazamos el nav hacia la izquierda */
+nav {
+    float: left;
+}
+/* Limpiamos errores de float, debido al tamaño en un resize */
+nav ul {
+    list-style: none;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+    font-family: Arial, san-serif bold;
+}
+/* Convertimos los elementos a en elementos bloque para manipular el padding,
+agregamos un margen del 20px, un color blanco para las letras,
+y le quitamos la decoración al texto */
+nav ul li a {
+    display: block;
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+/*agregamos sombreado de selección de los recuadros*/
+nav ul li:hover {
+    background: #3ead47;
+}
+
+nav ul li.sesion:hover {
+    background: #788278;
+}
+/*Movemos el margen del contenido principal hacia abajo para que éste no tope
+con la barra de navegación en primera instancia*/
+main {
+    padding-top: 10px;
+}
+
+p.italic {
+    font-style: italic;
+}
+
+p.oblique {
+    font-style: oblique;
+}
+
+/*Creador de margenes modo wrapper*/
+.wrapper {
+  width: 80%;
+  margin: auto;
+  overflow:hidden;
+}
+
+/*Agregamos
+    ANIMACIONES
+*/   
+.animate-top{
+    position:relative;
+    animation:animatetop 0.4s
+}
+
+.animate-top-2{
+    position:relative;
+    animation:animatetop2 0.6s
+}
+
+.animate-top-3{
+    position: relative;
+    animation: animatetop3 1s;
+}
+
+@keyframes animatetop3{
+    from{top:-300px;opacity:0} 
+    to{top:0;opacity:1}
+}
+@keyframes animatetop2{
+    from{top:-300px;opacity:0} 
+    to{top:0;opacity:1}
+}
+
+@keyframes animatetop{
+    from{top:-300px;opacity:0} 
+    to{top:0;opacity:1}
+}
+
+
+
+/*Contenido en forma de imagen revibe un radio,
+una anchura maxima, y una altura automatica. */ 
+
+.body_menu{
+    background-image: url(rsc/img/fondo-verde.jpg);
+}
+
+.img_content {
+    margin-top:10px;
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+}
+
+.content {
+    max-width: 980px;
+    margin: auto;
+
+}
+.black{
+    color:#fff!important;
+    background-color:#000!important
+}
+
+.container,.panel{padding:0.01em 16px}.panel{margin-top:16px;margin-bottom:16px}
+
+
+.paddign64 {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.contenedor{
+    padding: 0.01em 16px;
+    margin-top:16px;
+    margin-bottom:16px
+}
+
+.w3-opacity,.w3-hover-opacity:hover{
+    opacity:0.60
+}
+
+.w3-opacity-off,.w3-hover-opacity-off:hover {
+    opacity:1
+}
+
+.w3-opacity-max{
+    opacity:0.25
+}
+
+.w3-opacity-min{
+    opacity:0.75
+}
+
+.img_menu{
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+
+
+.input{
+    font-family: 'GeosansLight-Oblique';
+    padding:8px;
+    display:block;
+    border:none;
+    border-bottom:1px solid #ccc;
+    width:100%;
+    
+}
+
+.half {
+    width:25%
+}
+
+.border{
+    border:1px solid #ccc!important
+}
+
+.button{
+    color: whitesmoke;
+    border:none;
+    display:inline-block;
+    outline:0;
+    padding:8px 16px;
+    vertical-align:middle;
+    overflow:hidden;
+    background-color:inherit;
+    text-align:center;
+    cursor:pointer;
+    white-space:nowrap
+}
+
+.button:hover{
+    color:#000!important;background-color:#ccc!important
+}
+
+.button:first-child{
+    background-color:#ccc;color:#000
+}
+
+.table_menu, th, td{
+    border-collapse: collapse;  
+}
+
+.table_menu, th{
+    border-collapse: collapse;  
+}
+
+
+/*Destinados a creación del modulo de usuarios y de doctores: */
+*:focus {
+    outline: none;
+}
+
+/*Estilos de la lista*/
+.paciente_form ul{
+    width: 750px;
+    list-style-type: none;
+    list-style-position: outside;
+    margin: 0px;
+    padding: 0px;
+}
+
+.paciente_form li {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    position: relative;
+}
+
+.required_notification {
+    color: #d45252;
+    margin: 5px 0 0 0;
+    display: inline;
+}
+
+/*Elementos */
+.paciente_form label{
+    width: 150px;
+    margin-top: 3px;
+    display: inline-block;
+    float: left;
+    padding: 3px;
+}
+
+.paciente_form input{
+    font-family: 'GeosansLight-Oblique';
+    height: 20px;
+    width: 220px;
+    padding: 5px 8px;
+}
+
+.paciente_form textarea{
+    font-family: 'GeosansLight-Oblique';
+    padding: 8px;
+    width: 300px;
+}
+
+.paciente_form button{
+    margin-left: 156px;
+}
+
+/*Estilo visual*/
+.paciente_form input, .paciente_form textarea {
+    border: 1px solid #aaa;
+    box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+    border-radius: 2px;
+    padding-right: 30px;
+    -moz-transition: padding .25s;
+    -webkit-transition: padding .25s;
+    -o-transition: padding .25s;
+    transition: padding .25s;
+}
+
+.paciente_form input:focus, .paciente_form textarea:focus{
+    background: #fff;
+    border: 1px solid #555;
+    box-shadow: 0 0 3px #aaa;
+    padding-right: 70px;
+} 
+
+/*Validaciones de Html5*/
+.paciente_form input:required, .paciente_form textarea:required {
+    background: #fff url(/rsc/img/ico/ico_error.png) no-repeat 98% center;
+}
+
+.form_hint {
+    background: #d45252;
+    border-radius: 3px 3px 3px 3px;
+    color: white;
+    margin-left: 8px;
+    padding: 1px 6px;
+    z-index: 999; /* hints stay above all other elements */
+    position: absolute; /* allows proper formatting if hint is two lines */
+    display: none;
+}
+
+.form_hint::before {
+    content: "\25C0";
+    color: #d45252;
+    position: absolute;
+    top: 1px;
+    left: -6px;
+}
+
+.paciente_form input:focus + .form_hint {
+    display: inline;
+}
+
+.paciente_form input:required:valid + .form_hint {
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.paciente_form input:required:valid + .form_hint::before{
+    color: #4CE43E;
+}
+
+/*Propiedades del boton*/
+
+button{
+    background-color: #68b12f;
+    background: -webkit-gradient(linear, left top, left bottom, from(#68b12f), to(#50911e));
+    background: -webkit-linear-gradient(top, #68b12f, #50911e);
+    background: -moz-linear-gradient(top, #68b12f, #50911e);
+    background: -ms-linear-gradient(top, #68b12f, #50911e);
+    background: -o-linear-gradient(top, #68b12f, #50911e);
+    background: linear-gradient(top, #68b12f, #50911e);
+    border: 1px solid #509111;
+    border-bottom: 1px solid #5b992b;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    box-shadow: inset 0 1px 0 0 #9fd574;
+    -webkit-box-shadow: 0 1px 0 0 #9fd574 inset;
+    -moz-box-shadow: 0 1px 0 0 #9fd574 inset;
+    -ms-box-shadow: 0 1px 0 0 #9fd574 inset;
+    -o-box-shadow: 0 1px 0 0 #9fd574 inset;
+    color: white;
+    font-weight: bold;
+    padding: 6px 20px;
+    text-align: center;
+    text-shadow: 0 -1px 0 rgb(58, 103, 21);
+}
+
+
+button:hover{
+    opacity: .85;
+    cursor: pointer;
+}
+
+button:active{
+    border: 1px solid #20911e;
+    box-shadow: 0 0 10px 5px #356b0b inset;
+    -webkit-box-shadow: 0 0 10px 5px #356b0b inset;
+    -moz-box-shadow: 0 0 10px 5px #356b0b inset;
+    -ms-box-shadow: 0 0 10px 5px #356b0b inset;
+    -o-box-shadow: 0 0 10px 5px #356b0b inset;
+}
+
+/*Propiedades de la lista de seleccion*/
+
+
+.select-form{
+    font-family: 'GeosansLight-Oblique';
+    border: 1px solid #ccc;
+    width: 120px;
+    border-radius: 3px;
+    overflow: hidden;
+    border: 1px solid #aaa;
+    box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+    border-radius: 2px;
+    padding-right: 30px;
+    -moz-transition: padding .25s;
+    -webkit-transition: padding .25s;
+    -o-transition: padding .25s;
+    transition: padding .25s;
+}
+
+.select-form-medicinas{
+    font-family: 'GeosansLight-Oblique';
+    border: 1px solid #ccc;
+    width: auto;
+    height: 50px;
+    border-radius: 3px;
+    overflow: hidden;
+    border: 1px solid #aaa;
+    box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+    border-radius: 2px;
+    padding-right: 30px;
+    -moz-transition: padding .25s;
+    -webkit-transition: padding .25s;
+    -o-transition: padding .25s;
+    transition: padding .25s;
+}
+
+.select-form select{
+    font-family: 'GeosansLight-Oblique';
+    padding: 5px 8px;
+    width: 130%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+}
+
+.select-form select:focus{
+    outline: none;
+}
+
+.table_medicinas{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table_medicinas, th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.left{
+    text-align: left;
+    float: left;
+}
+
+table.scroll tbody {
+    height: 100px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.table_medicinas tr:nth-child(even){background-color: #f2f2f2}
+
+/*La lista en cascada para el elemento d ela barra
+de navegación iniciando sesión*/
+
+#header_menu{
+    background: #333;
+	color: white;
+	height: 80px;
+}
+#header_menu a{
+    color: white;
+}
+
+/*Logo*/
+#logo_header{
+    float: left;
+	padding: 15px 0 0 20px;
+	text-decoration: none;
+}
+
+#logo_header:hover{
+    color: #4CE43E;
+}
+
+#logo_header .menu_user{
+    font-family: GOODTIME;    
+    display: block;
+    font-weight: 700;
+    font-size: 1.4em;
+}
+
+#logo_header .menu_tipo{
+    font-family: GOODTIME;  
+    display: block;
+    font-weight: 400;
+    font-size: 1em;
+    color: #999;
+}
+
+#logo_header p{
+    display: block;
+    font-weight: 400;
+    font-size: 0.8em;
+    color: #FFFFFF;
+}
+
+/*Navegador del menú*/
+.nav_menu{
+    float: right;
+}
+
+.nav_menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-right: 20px;
+}
+
+.nav_menu ul li{
+    display: inline-block;
+    line-height: 80px;
+}
+
+.nav_menu ul li a{
+    display: block;
+    padding: 0 10px;
+    text-decoration: none;
+    font: bold;
+}
+
+.nav_menu ul li a:hover{
+    background: #3ead47;
+}
+
+/*FUENTES*/
+
+
+@font-face {
+    font-family: 'GeosansLight';
+    font-style: normal;
+    font-weight: normal;
+    src: local('GeosansLight'), url('fonts/GeosansLight.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'GeosansLight-Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('GeosansLight-Oblique'), url('fonts/GeosansLight-Oblique.woff') format('woff');
+    }
+    @font-face {
+        font-family: 'GOODTIME';
+        font-style: normal;
+        font-weight: normal;
+        src: local('GOODTIME'), url('fonts/GOODTIME.ttf') format('truetype');
+        }
+
+.error{
+    color: #FF0000;
+    text-align: center;
+    padding-left: 500px;
+}
+
+
+
+
